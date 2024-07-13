@@ -11,10 +11,10 @@ function App() {
 	return (
 		<BrowserRouter>
 				<Routes>
-					<Route path="/" element={<><Sidebar /><LanguageSelector /> <Content /></>} />
-					<Route path="/en" element={<PdfShow lng={'en'} />} />
-					<Route path="/ru" element={<PdfShow lng={'ru'} />} />
-					<Route path="/sl" element={<PdfShow lng={'sl'} />} />
+					<Route path="/brochure/" element={<><Sidebar /><LanguageSelector /> <Content /></>} />
+					<Route path="/brochure/en" element={<PdfShow lng={'en'} />} />
+					<Route path="/brochure/ru" element={<PdfShow lng={'ru'} />} />
+					<Route path="/brochure/sl" element={<PdfShow lng={'sl'} />} />
 				</Routes>
 		</BrowserRouter>
 	);
