@@ -70,7 +70,7 @@ function Slide_01() {
 							{translations(selectedLanguage)}
 						</div>
 						<div className="discount">
-							<h1>{t("union.union_1")}%</h1>
+							<h1>{t("discount")}%</h1>
 							<span>{t("slide_1.text_1_3")}</span>
 						</div>
 					</div>

@@ -1,7 +1,7 @@
 {
-    "union": {
-        "union_1" : 10
-    },
+	"title": "«⅄OU!» | Art and theatre studio in the centre of Ljubljana",
+	"description": "Studio of theatre and art «⅄OU!» in the center of Ljubljana on Kotnikova, 4. Acting skills for children 7-12 years. Lessons in Russian, Slovenian and English. Start on 1 September. Enrollment in groups until 20.08.",
+	"discount" : 10,
     "slide_1": {
         "text_1_1" : "Art and theatre studio in the centre of Ljubljana",
 		"text_1_2": "Acting for children from 7 to 12 years",

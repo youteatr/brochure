@@ -27,7 +27,7 @@
 	
 	font-family: 'GolosText', sans-serif;
 	font-weight: 400;
-	color: var(--c-one);
+	color: var(--m-three);
 	z-index: 100;
 }
 
@@ -39,7 +39,17 @@
     user-select: none;
 }
 
-button, input[type="submit"], input[type="reset"] {
+.grid {
+	display: grid;
+
+	width: 100%;
+	height: 100%;
+}
+.grid__viewport {
+	position: relative;
+}
+
+button, input, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;
 	border: none;
@@ -47,6 +57,15 @@ button, input[type="submit"], input[type="reset"] {
 	font: inherit;
 	cursor: pointer;
 	outline: inherit;
+}
+/* убираем стрелки управления для input type number */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+input[type=number] {
+	-moz-appearance: textfield;
 }
 
 h1 {
