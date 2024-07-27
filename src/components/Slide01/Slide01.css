@@ -96,7 +96,7 @@
 		padding-bottom: 0px;
 	}
 	.translations {
-		zoom: .5;
+		zoom: .6;
 	}
 	.slide_one {
 		padding: 40px 0;
@@ -121,6 +121,7 @@
 	}
 	.discount h1 {
 		font-size: 20px;
+		margin-bottom: 0px;
 	}
 	.discount span {
 		font-size: 16px;

@@ -58,6 +58,7 @@ ID этой записи: \`${id}\`
 				  .catch((error) => {
 					// console.error('Error:', error);
 				  });
+				  alert(t("form.form_15"))
 				  window.location.reload()
 		}
 
