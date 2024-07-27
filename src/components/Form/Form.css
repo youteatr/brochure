@@ -36,6 +36,7 @@
 	grid-template-rows: min-content;
 	grid-column-gap: 0px;
 	grid-row-gap: 32px;
+	align-content: center;
 
 	box-sizing: border-box;
 
@@ -133,8 +134,8 @@
 .form__close {
 	position: absolute;
 
-	top: 8px;
-	right: 8px;
+	top: 12px;
+	right: 12px;
 
 	width: 32px;
 	height: 32px;

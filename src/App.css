@@ -49,9 +49,6 @@
 	position: relative;
 }
 
-.temp-section:not(:last-child) {
-	margin-bottom: 64px;
-}
 
 button, input, input[type="submit"], input[type="reset"] {
 	background: none;
@@ -96,4 +93,12 @@ h2 {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
+}
+
+
+@media (max-width: 768px) {
+
+	.temp-section .grid__viewport--fr-1 {
+		padding: 0 !important;
+	}
 }
