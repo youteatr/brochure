@@ -8,7 +8,7 @@ function App() {
 	return (
 		<BrowserRouter>
 				<Routes>
-					<Route path="/brochure/" element={
+					<Route path="/" element={
 					<>
 						<Slide01 />
 					</>} />
