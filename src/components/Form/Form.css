@@ -4,7 +4,8 @@
 }
 
 .form {
-	position: absolute;
+	position: fixed;
+	margin-bottom: 10vh;
 
 	top: 0;
 	left: 0;
