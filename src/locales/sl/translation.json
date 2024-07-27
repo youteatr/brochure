@@ -1,16 +1,10 @@
 {
-    "React" : "Questo è React",
-    "Home": "Casa",
-    "Contact": "Contattaci",
-    "About": "Riguardo a noi",
-    "username": {
-        "label": "nome utente",
-        "placeholder": "segnaposto..."
+    "union": {
+        "union_1" : 10
     },
-    "password": {
-        "label": "parola d'ordine",
-        "placeholder": "segnaposto password..."
-    },
-    "location": "Inserisci la posizione",
-    "Address": "Inserisci l'indirizzo"
+    "slide_1": {
+        "text_1_1" : "Gledališki in umetniški studio v centru Ljubljane",
+		"text_1_2": "Tečaj igralstva za otroke od 7 do 12 let",
+		"text_1_3": "popust na šolnino ob prijavi pred 31.07.24"
+    }
 }

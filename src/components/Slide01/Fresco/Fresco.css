@@ -1,0 +1,46 @@
+
+.fresco {
+	position: absolute;
+	width: 100%;
+	top: 0;
+    z-index: 0;
+
+	overflow: hidden;
+}
+
+.fresco .mask,
+.fresco .text,
+.fresco .vector {
+	position: absolute;
+    top: 42.5%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.fresco .mask {
+	width: 420px;
+	height: 420px;
+    z-index: 3;
+}
+
+.fresco .text {
+	width: 490px;
+    z-index: 2;
+
+	margin-top: 150px;
+}
+
+.fresco .vector {
+    z-index: 1;
+    top: 50%;
+
+	margin-top: 50px;
+}
+
+
+@media (width: 1768px) {
+	.fresco .mask,
+	.fresco .text {
+		top: 42.5%;
+	}
+}

@@ -1,16 +1,10 @@
 {
-    "React" : "This is React",
-    "Home": "Home",
-    "Contact": "Contact Us",
-    "About": "About Us",
-    "username": {
-        "label": "username",
-        "placeholder": "placeholder..."
+    "union": {
+        "union_1" : 10
     },
-    "password": {
-        "label": "password",
-        "placeholder": "password placeholder..."
-    },
-    "location": "Enter the location",
-    "Address": "Enter the address"
+    "slide_1": {
+        "text_1_1" : "Art and theatre studio in the centre of Ljubljana",
+		"text_1_2": "Acting for children from 7 to 12 years",
+		"text_1_3": "discount on enrolment until 31.07.24"
+    }
 }

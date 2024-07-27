@@ -1,74 +1,10 @@
 {
-	"slide_1": {
-		"text_1_1": "Студия театра и искусства в центре Любляны",
+    "union": {
+        "union_1" : 10
+    },
+    "slide_1": {
+        "text_1_1" : "Студия театра и искусства в центре Любляны",
 		"text_1_2": "Актерское мастерство для детей от 7 до 12 лет",
 		"text_1_3": "скидка на обучение при записи до 31.07.24"
-	},
-	"slide_2": {
-		"text_2_1": "",
-		"text_2_2": "",
-		"text_2_3": "",
-		"text_2_4": "",
-		"text_2_5": "",
-		"text_2_6": "",
-		"text_2_7": "",
-		"text_2_8": "",
-		"text_2_9": "",
-		"text_2_10": "",
-		"text_2_11": "",
-		"text_2_12": "",
-		"text_2_13": "",
-		"text_2_14": "",
-		"text_2_15": "",
-		"text_2_16": "",
-		"text_2_17": "",
-		"text_2_18": "",
-		"text_2_1": "",
-		"text_2_1": "",
-		"text_2_2": ""
-	},
-	"slide_3": {
-		"text_3_": "",
-		"text_3_": ""
-	},
-	"slide_4": {
-		"text_4_": "",
-		"text_4_": ""
-	},
-	"slide_5": {
-		"text_5_": "",
-		"text_5_": ""
-	},
-	"slide_6": {
-		"text_6_": "",
-		"text_7_": ""
-	},
-	"slide_7": null,
-	"slide_8": {
-		"text_8_": "",
-		"text_8_": ""
-	},
-	"form": "",
-
-
-
-
-
-
-
-
-    "React" : "Das ist React",
-    "Home": "Daheim",
-    "Contact": "Kontaktiere uns",
-    "About": "Über uns",
-    "username": {
-        "label": "Nutzername",
-        "placeholder": "Platzhalter..."
-    },
-    "password": {
-        "label": "Kennwort",
-        "placeholder": "passwort platzhalter..."
-    },
-    "location": "Geben Sie den Standort ein",
-    "Address": "Gib die Adresse ein"
+    }
 }

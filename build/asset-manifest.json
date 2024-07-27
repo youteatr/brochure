@@ -1,13 +1,19 @@
 {
   "files": {
-    "main.css": "/brochure/static/css/main.e6c13ad2.css",
-    "main.js": "/brochure/static/js/main.8c2e598e.js",
+    "main.css": "/brochure/static/css/main.cb9837be.css",
+    "main.js": "/brochure/static/js/main.fc343b4d.js",
+    "static/media/frescoImage.png": "/brochure/static/media/frescoImage.2f58d94c54fd953712c8.png",
+    "static/media/GolosText-VariableFont.ttf": "/brochure/static/media/GolosText-VariableFont.cddbe8e99d0cef3d85fb.ttf",
+    "static/media/frescoText.svg": "/brochure/static/media/frescoText.fb86ae10577125eff69bd7de9f8a572c.svg",
+    "static/media/translationVector.svg": "/brochure/static/media/translationVector.25e3e01ce4eec891ce5c.svg",
+    "static/media/frescoVector.svg": "/brochure/static/media/frescoVector.017e61c75b21c919ed228a8b4491555d.svg",
     "index.html": "/brochure/index.html",
-    "main.e6c13ad2.css.map": "/brochure/static/css/main.e6c13ad2.css.map",
-    "main.8c2e598e.js.map": "/brochure/static/js/main.8c2e598e.js.map"
+    "static/media/discountVector.svg": "/brochure/static/media/discountVector.371a095989456169f90d.svg",
+    "main.cb9837be.css.map": "/brochure/static/css/main.cb9837be.css.map",
+    "main.fc343b4d.js.map": "/brochure/static/js/main.fc343b4d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.8c2e598e.js"
+    "static/css/main.cb9837be.css",
+    "static/js/main.fc343b4d.js"
   ]
 }
