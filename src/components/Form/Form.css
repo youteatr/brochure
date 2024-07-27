@@ -177,7 +177,7 @@
 	.mob {
 		display: block;
 	}
-	.grid__viewport--fr-1 {
+	.form .grid__viewport--fr-1 {
 		display: none;
 	}
 	.form {
@@ -191,7 +191,7 @@
         top: unset;
         bottom: -1px;
         padding: 16px 16px;
-        border-radius: 8px 8px 0px 0px;
+        border-radius: 16px 16px 0px 0px;
 	}
 	.mob-show .mob-form-hidden {
 		display: block;
@@ -204,6 +204,6 @@
         top: 50%;
         bottom: unset;
         padding: 64px 32px;
-        border-radius: 8px;
+        border-radius: 16px;
 	}
 }

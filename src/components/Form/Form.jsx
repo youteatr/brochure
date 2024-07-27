@@ -1,11 +1,10 @@
 import React, { useRef } from 'react'
-// import { useTranslation } from 'react-i18next'
-// import i18n from '../../i18n';
+import { useTranslation } from 'react-i18next'
 
 import "./Form.css"
 
 function Form() {
-	// const { t } = useTranslation();
+	const { t } = useTranslation();
 
 	const
 		telegramBotToken = "7031033842:AAFb5_SIvn8fvWp4ynULN462kpbmvB2wozY", // process.env.REACT_APP_TELEGRAM_BOT_TOKEN,
@@ -59,6 +58,7 @@ ID этой записи: \`${id}\`
 				  .catch((error) => {
 					// console.error('Error:', error);
 				  });
+				  window.location.reload()
 		}
 
 	}
@@ -71,22 +71,22 @@ ID этой записи: \`${id}\`
 		let res = true
 
 		if (parentName.current.value.length < 2) {
-			alert('Пожалуйста, введите ваше имя.');
+			alert(t("form.form_9"));
 			res = false
 		} else if (emailTest()) {
-			alert("Пожалуйста, проверьте правильность введенного адреса электронной почты.")
+			alert(t("form.form_10"))
 			res = false
 		} else if (checkPhone()) {
-			alert("Пожалуйста, проверьте правильность введенного номера телефона.")
+			alert(t("form.form_11"))
 			res = false
 		} else if (childName.current.value.length < 2) {
-			alert('Пожалуйста, введите имя вашего ребенка.');
+			alert(t("form.form_12"));
 			res = false
 		} else if (childAge.current.value < 1) {
-			alert('Пожалуйста, введите возраст вашего ребенка.');
+			alert(t("form.form_13"));
 			res = false
 		} else if (!(childAge.current.value >= 7 && childAge.current.value <= 15)) {
-			alert('Приносим извинения, но мы набираем в группы детей от 7-ми до 15-ти.');
+			alert(t("form.form_14"));
 			res = false
 		}
 		
@@ -101,6 +101,7 @@ ID этой записи: \`${id}\`
 		
 		form.classList.add("offset")
 		form__content.classList.add("mob-show")
+		
 
 		return res
 	}
@@ -156,7 +157,7 @@ ID этой записи: \`${id}\`
 					send()
 				}}>
 					<button onClick={closeForm} className="form__close mob-form-hidden desk-form-hidden" type="button"></button>
-					<span className="form_title mob-form-hidden">Записаться на курс</span>
+					<span className="form_title mob-form-hidden">{t("form.form_1")}</span>
 					<div className="grid form__inputs mob-form-hidden">
 						<label className="form__label" id="for-parent-name">
 							<input
@@ -167,7 +168,7 @@ ID этой записи: \`${id}\`
 								className="form__input"
 
 								name="parent-name"
-								placeholder="Ваше имя"
+								placeholder={t("form.form_2")}
 
 								minLength="1"
 								maxLength="20"
@@ -182,7 +183,7 @@ ID этой записи: \`${id}\`
 								className="form__input"
 
 								name="email"
-								placeholder="E-Mail"
+								placeholder={t("form.form_3")}
 
 								minLength="1"
 								maxLength="50"
@@ -197,7 +198,7 @@ ID этой записи: \`${id}\`
 								className="form__input"
 
 								name="phone"
-								placeholder="Телефон"
+								placeholder={t("form.form_4")}
 
 								minLength="1"
 								maxLength="20"
@@ -212,7 +213,7 @@ ID этой записи: \`${id}\`
 								className="form__input"
 
 								name="child-name"
-								placeholder="Имя ребенка"
+								placeholder={t("form.form_5")}
 
 								minLength="1"
 								maxLength="20"
@@ -227,7 +228,7 @@ ID этой записи: \`${id}\`
 								className="form__input"
 
 								name="child-age"
-								placeholder="Возраст ребенка"
+								placeholder={t("form.form_6")}
 
 								minLength="1"
 								maxLength="2"
@@ -235,8 +236,8 @@ ID этой записи: \`${id}\`
 						</label>
 					</div>
 					<div className="grid form_submit">
-						<button className="form__button no-select" type="submit">Записаться бесплатно</button>
-						<span className="form__notice mob-form-hidden">Отправляя заявку, нажимая на кнопку, вы даете согласие на обработку персональных данных «Студии ⅄OU!»</span>
+						<button className="form__button no-select" type="submit">{t("form.form_7")}</button>
+						<span className="form__notice mob-form-hidden">{t("form.form_8")}</span>
 					</div>
 				</form>
 			</div>

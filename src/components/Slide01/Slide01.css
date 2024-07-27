@@ -82,6 +82,46 @@
 	font-weight: 400;
 }
 
-@media (max-width: 1768px) {
-	
+@media (max-width: 1200px) {
+	.slide_one .container {
+		box-sizing: border-box;
+		padding: 0 20px;
+		padding-bottom: 40px;
+	}
+}
+@media (max-width: 768px) {
+	.slide_one .container {
+		padding-bottom: 0px;
+	}
+	.translations {
+		zoom: .5;
+	}
+	.slide_one {
+		padding: 40px 0;
+	}
+	.slide_one h1 {
+		font-size: 36px;
+        line-height: 110%;
+		margin-bottom: 8px;
+	}
+	.slide_one h2 {
+		font-size: 20px;
+        line-height: 120%;
+	}
+	.discount {
+		margin-left: 25%;
+	}
+	.discount h1::before {
+		width: 25px;
+		height: 25px;
+		top: -20px;
+		left: -25px;
+	}
+	.discount h1 {
+		font-size: 20px;
+	}
+	.discount span {
+		font-size: 16px;
+		line-height: 120%;
+	}
 }

@@ -49,6 +49,10 @@
 	position: relative;
 }
 
+.temp-section:not(:last-child) {
+	margin-bottom: 64px;
+}
+
 button, input, input[type="submit"], input[type="reset"] {
 	background: none;
 	color: inherit;

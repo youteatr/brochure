@@ -44,3 +44,10 @@
 		top: 42.5%;
 	}
 }
+@media (max-width: 768px) {
+}
+@media (max-width: 480px) {
+	.fresco img {
+		zoom: .5;
+	}
+}
