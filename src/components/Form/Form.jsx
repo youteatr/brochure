@@ -8,8 +8,8 @@ function Form() {
 	// const { t } = useTranslation();
 
 	const
-		telegramBotToken = process.env.REACT_APP_TELEGRAM_BOT_TOKEN,
-		telegramChatId = process.env.REACT_APP_TELEGRAM_CHAT_ID,
+		telegramBotToken = "7031033842:AAFb5_SIvn8fvWp4ynULN462kpbmvB2wozY", // process.env.REACT_APP_TELEGRAM_BOT_TOKEN,
+		telegramChatId = -1002197975269, // process.env.REACT_APP_TELEGRAM_CHAT_ID,
 		url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?parse_mode=Markdown`,
 		
 		parentName = useRef(null),
@@ -42,10 +42,6 @@ function Form() {
 ID этой записи: \`${id}\`
 				`
 
-				console.log("Token: " + telegramBotToken.toString().slice(0, -35));
-				console.log("Chat ID: " + telegramChatId.toString().slice(0, -10));
-				console.log(message);
-
 				fetch(url, {
 					method: 'POST',
 					headers: {
@@ -58,10 +54,10 @@ ID этой записи: \`${id}\`
 				  })
 				  .then(response => response.json())
 				  .then(data => {
-					console.log('Success:', data);
+					// console.log('Success:', data);
 				  })
 				  .catch((error) => {
-					console.error('Error:', error);
+					// console.error('Error:', error);
 				  });
 		}
 
@@ -70,17 +66,17 @@ ID этой записи: \`${id}\`
 
 	const fullFormMode = () => {
 		let formLabelAddition = document.querySelectorAll(".form__label--addition")
+		let form = document.querySelector(".form")
+		let form__content = document.querySelector(".form__content")
 		let res = true
 
 		if (parentName.current.value.length < 2) {
 			alert('Пожалуйста, введите ваше имя.');
 			res = false
 		} else if (emailTest()) {
-			console.log("E-Mail wrong");
 			alert("Пожалуйста, проверьте правильность введенного адреса электронной почты.")
 			res = false
 		} else if (checkPhone()) {
-			console.log("Phone wrong");
 			alert("Пожалуйста, проверьте правильность введенного номера телефона.")
 			res = false
 		} else if (childName.current.value.length < 2) {
@@ -102,12 +98,24 @@ ID этой записи: \`${id}\`
 			}
 		});
 
+		
+		form.classList.add("offset")
+		form__content.classList.add("mob-show")
+
 		return res
 	}
 
 	const emailTest = () => {
 		// eslint-disable-next-line
 		return !/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,8})+$/.test(eMail.current.value);
+	}
+
+	const closeForm = () => {
+		let form = document.querySelector(".form")
+		let form__content = document.querySelector(".form__content")
+		
+		form.classList.remove("offset")
+		form__content.classList.remove("mob-show")
 	}
 
 	const checkPhone = () => {
@@ -141,15 +149,15 @@ ID этой записи: \`${id}\`
 
 	return (
 		<div className="form grid grid__viewports">
-			<div className="grid__viewport grid__viewport--col-1"></div>
-			<div className="grid__viewport grid__viewport--col-2">
+			<div className="grid__viewport grid__viewport--fr-1"></div>
+			<div className="grid__viewport grid__viewport--fr-2">
 				<form className="form__content" onSubmit={(e) => {
 					e.preventDefault()
 					send()
 				}}>
-
-					<span className="form_title">Записаться на курс</span>
-					<div className="grid form__inputs">
+					<button onClick={closeForm} className="form__close mob-form-hidden desk-form-hidden" type="button"></button>
+					<span className="form_title mob-form-hidden">Записаться на курс</span>
+					<div className="grid form__inputs mob-form-hidden">
 						<label className="form__label" id="for-parent-name">
 							<input
 								ref={parentName}
@@ -228,7 +236,7 @@ ID этой записи: \`${id}\`
 					</div>
 					<div className="grid form_submit">
 						<button className="form__button no-select" type="submit">Записаться бесплатно</button>
-						<span className="form__notice">Отправляя заявку, нажимая на кнопку, вы даете согласие на обработку персональных данных «Студии ⅄OU!»</span>
+						<span className="form__notice mob-form-hidden">Отправляя заявку, нажимая на кнопку, вы даете согласие на обработку персональных данных «Студии ⅄OU!»</span>
 					</div>
 				</form>
 			</div>
