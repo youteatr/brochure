@@ -190,9 +190,8 @@
 	.form__content {
 		transform: translate(-50%, 0%);
         top: unset;
-        bottom: -1px;
+        bottom: 20px;
         padding: 16px 16px;
-        border-radius: 16px 16px 0px 0px;
 	}
 	.mob-show .mob-form-hidden {
 		display: block;
@@ -206,5 +205,9 @@
         bottom: unset;
         padding: 64px 32px;
         border-radius: 16px;
+	}
+	.form__button:hover {
+		background-color: var(--c-two);
+		
 	}
 }
