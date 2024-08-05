@@ -58,27 +58,27 @@
 	background: url("./img/translationVector.svg");
 	background-size: 100% 100%;
 }
-.discount {
+.notice {
 	max-width: 320px;
 }
-.discount h1 {
+.notice h1 {
 	position: relative;
 
 	margin-bottom: 8px;
 }
-.discount h1::before {
+.notice h1::before {
 	content: "";
 	width: 55px;
 	height: 55px;
 	display: inline-block;
-	background: url("./img/discountVector.svg");
+	background: url("./img/noticeVector.svg");
 	background-size: 100% 100%;
 
 	position: absolute;
 	top: -32.5px;
 	left: -55px;
 }
-.discount span {
+.notice span {
 	font-size: 28px;
 	line-height: 32px;
 	font-weight: 400;
@@ -110,20 +110,20 @@
 		font-size: 20px;
         line-height: 120%;
 	}
-	.discount {
+	.notice {
 		margin-left: 35%;
 	}
-	.discount h1::before {
+	.notice h1::before {
 		width: 25px;
 		height: 25px;
 		top: -20px;
 		left: -25px;
 	}
-	.discount h1 {
+	.notice h1 {
 		font-size: 20px;
 		margin-bottom: 0px;
 	}
-	.discount span {
+	.notice span {
 		font-size: 16px;
 		line-height: 120%;
 	}
