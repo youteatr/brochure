@@ -37,9 +37,9 @@ function App() {
 							<Slide08 />
 							<Form />
 						</>} />
-						<Route path="/downloads/ru.pdf" element={"../downloads/ru.pdf"} />
-						<Route path="/downloads/en.pdf" element={"../downloads/en.pdf"} />
-						<Route path="/downloads/sl.pdf" element={"../downloads/sl.pdf"} />
+						<Route path="/downloads/rus.pdf" element={"../downloads/rus.pdf"} />
+						<Route path="/downloads/eng.pdf" element={"../downloads/eng.pdf"} />
+						<Route path="/downloads/slv.pdf" element={"../downloads/slv.pdf"} />
 					</Routes>
 			</BrowserRouter>
 		</>
