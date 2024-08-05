@@ -17,7 +17,7 @@
 /* FONTS */
 @font-face {
 	font-family: 'GolosText';
-	src: url('/public/fonts/GolosText-VariableFont.ttf') format('truetype');
+	src: url('./assets/fonts/GolosText-VariableFont.ttf') format('truetype');
 	font-style: normal;
 }
 
@@ -25,10 +25,7 @@
 	margin: 0;
 	padding: 0;
 	
-	font-family: 'GolosText', sans-serif;
-	font-weight: 400;
-	color: var(--m-three);
-	z-index: 100;
+	scroll-behavior: smooth;
 }
 
 .no-select {
@@ -80,8 +77,29 @@ h2 {
 	font-weight: 400;
 }
 
+.wrapper { /* page body */
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto 1fr;
+	gap: 0;
+
+	min-height: 100vh;
+	
+	justify-content: center;
+	overflow: hidden;
+
+	font-family: 'GolosText', sans-serif;
+	font-weight: 400;
+	color: var(--m-three);
+	
+	z-index: 100;
+}
+
 .container {
 	padding: 0 80px;
+
+	position: relative;
+	z-index: 102;
 }
 
 .inner {

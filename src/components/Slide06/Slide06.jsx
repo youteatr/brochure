@@ -9,7 +9,7 @@ function Slide06() {
   return (
 	<section className="temp-section grid grid__viewports">
 		<div className="grid__viewport grid__viewport--fr-1">
-			<img className="temp-img"  src={"temp/Slide06/" + t("temp")} alt="Временная реализация" />
+			<img className="temp-img no-select"  src={"temp/Slide06/" + t("temp")} alt="Временная реализация" />
 		</div>
 		<div className="grid__viewport grid__viewport--fr-2"></div>
 	</section>

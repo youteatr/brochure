@@ -20,8 +20,8 @@ function App() {
 	return (
 		<>
 			<Helmet>
-				<title>{t('title')}</title>
-				<meta name="description" content={t('description')} />
+				<title>{t('meta.titles./')}</title>
+				<meta name="description" content={t('meta.descriptions./')} />
 			</Helmet>
 			<BrowserRouter>
 					<Routes>

@@ -5,6 +5,7 @@
 
 .form {
 	position: fixed;
+	z-index: 103;
 
 	bottom: 0;
 	left: 0;
