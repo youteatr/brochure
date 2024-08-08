@@ -59,14 +59,10 @@
 	background-size: 100% 100%;
 }
 .notice {
-	max-width: 320px;
-}
-.notice h1 {
+	max-width: 370px;
 	position: relative;
-
-	margin-bottom: 8px;
 }
-.notice h1::before {
+.notice::before {
 	content: "";
 	width: 55px;
 	height: 55px;
@@ -113,7 +109,7 @@
 	.notice {
 		margin-left: 35%;
 	}
-	.notice h1::before {
+	.notice::before {
 		width: 25px;
 		height: 25px;
 		top: -20px;
