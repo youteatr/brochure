@@ -7,8 +7,8 @@ function Form() {
 	const { t } = useTranslation();
 
 	const
-		telegramBotToken = "7031033842:AAFb5_SIvn8fvWp4ynULN462kpbmvB2wozY", // process.env.REACT_APP_TELEGRAM_BOT_TOKEN,
-		telegramChatId = -1002197975269, // process.env.REACT_APP_TELEGRAM_CHAT_ID,
+		telegramBotToken = "7519172361:AAG5Pwv9MFuCYYrU5dnVYQ09jiTfxcd_Bzk", // process.env.REACT_APP_TELEGRAM_BOT_TOKEN,
+		telegramChatId = -1002215352460, // process.env.REACT_APP_TELEGRAM_CHAT_ID,
 		url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?parse_mode=Markdown`,
 		
 		parentName = useRef(null),
@@ -64,7 +64,6 @@ ID этой записи: \`${id}\`
 
 	}
 
-
 	const fullFormMode = () => {
 		let formLabelAddition = document.querySelectorAll(".form__label--addition")
 		let form = document.querySelector(".form")
@@ -99,10 +98,8 @@ ID этой записи: \`${id}\`
 			}
 		});
 
-		
 		form.classList.add("offset")
 		form__content.classList.add("mob-show")
-		
 
 		return res
 	}
@@ -138,6 +135,7 @@ ID этой записи: \`${id}\`
 			(c ^ crypto.getRandomValues(new Uint8Array(1))[0] & 15 >> c / 4).toString(16)
 		);
 	}
+
 	const generateNow = () => {
 		const now = new Date();
 		let year	= now.getFullYear();
