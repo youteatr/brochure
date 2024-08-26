@@ -7,8 +7,8 @@ function Form() {
 	const { t } = useTranslation();
 
 	const
-		telegramBotToken = "7519172361:AAG5Pwv9MFuCYYrU5dnVYQ09jiTfxcd_Bzk", // process.env.REACT_APP_TELEGRAM_BOT_TOKEN,
-		telegramChatId = -1002215352460, // process.env.REACT_APP_TELEGRAM_CHAT_ID,
+		telegramBotToken = process.env.REACT_APP_TELEGRAM_BOT_TOKEN,
+		telegramChatId = process.env.REACT_APP_TELEGRAM_CHAT_ID,
 		url = `https://api.telegram.org/bot${telegramBotToken}/sendMessage?parse_mode=Markdown`,
 		
 		parentName = useRef(null),
