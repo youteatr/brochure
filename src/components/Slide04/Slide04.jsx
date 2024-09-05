@@ -7,11 +7,10 @@ function Slide04() {
 	const { t } = useTranslation();
 
   return (
-	<section className="temp-section grid grid__viewports">
-		<div className="grid__viewport grid__viewport--fr-1">
-			<img className="temp-img no-select"  src={"temp/Slide04/" + t("temp")} alt="Временная реализация" />
+		<section className="temp-section">
+			<div className="temp-section__content">
+			<img className="temp-img no-select"  src={"temp/Slide04/" + t("global.temp")} alt="Временная реализация" />
 		</div>
-		<div className="grid__viewport grid__viewport--fr-2"></div>
 	</section>
   )
 }

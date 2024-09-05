@@ -1,138 +1,115 @@
+/* SLIDE01.COMPONENT { ... */
+	.start {
+		/* variables { ... */
+			--start__title-max-width: 40.5em; /* 648px */
+			--start__subtitle-max-width: 23.75em; /* 380px */
+			--start__notice-max-width: var(--viewport-frame-right); /* 500px */
+			--start__notice-icon-size: 3em; /* 48px */
+		/* ... } variables */
 
-.slide_one {
-	width: 100%;
-	height: 100%;
-	padding: 80px 0;
+		width: 100%;
+		height: 100vh;
 
-	background: var(--c-two);
-}
+		padding: var(--padding-default) 0;
 
-.slide_one * {
-	color: var(--c-one);
-}
+		background: var(--c-two);
 
-.slide_one h1 {
-	max-width: 648px;
-
-	margin-bottom: 18px;
-}
-.slide_one h2 {
-	max-width: 380px;
-}
-
-
-.down {
-	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: flex-end;
-}
-
-.translations {
-	min-width: 127px;
-	display: flex;
-	flex-direction: column;
-}
-.translations button {
-	width: 100%;
-
-	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-between;
-	align-items: center;
-
-	font-size: 40px;
-	line-height: 40px;
-	font-weight: 400;
-	text-transform: uppercase;
-	
-	padding: 4px 0;
-
-	color: var(--c-three);
-}
-.translations button::after {
-	content: "";
-	width: 32px;
-	height: 32px;
-	display: inline-block;
-	background: url("./img/translationVector.svg");
-	background-size: 100% 100%;
-}
-.notice {
-	max-width: 370px;
-	position: relative;
-}
-.notice::before {
-	content: "";
-	width: 55px;
-	height: 55px;
-	display: inline-block;
-	background: url("./img/noticeVector.svg");
-	background-size: 100% 100%;
-
-	position: absolute;
-	top: -32.5px;
-	left: -55px;
-}
-.notice span {
-	font-size: 28px;
-	line-height: 32px;
-	font-weight: 400;
-}
-
-@media (max-width: 1200px) {
-	.slide_one .container {
 		box-sizing: border-box;
-		padding: 0 20px;
-		padding-bottom: 40px;
 	}
-}
-@media (max-width: 768px) {
-	.slide_one .container {
-		padding-bottom: 0px;
-	}
-	.translations {
-		zoom: .6;
-	}
-	.slide_one {
-		padding: 40px 0;
-	}
-	.slide_one h1 {
-		font-size: 36px;
-        line-height: 110%;
-		margin-bottom: 8px;
-	}
-	.slide_one h2 {
-		font-size: 20px;
-        line-height: 120%;
-	}
-	.notice {
-		margin-left: 35%;
-	}
-	.notice::before {
-		width: 25px;
-		height: 25px;
-		top: -20px;
-		left: -25px;
-	}
-	.notice h1 {
-		font-size: 20px;
-		margin-bottom: 0px;
-	}
-	.notice span {
-		font-size: 16px;
-		line-height: 120%;
-	}
-}
-@media (max-width: 480px) {
-	.form {
-		padding: 0;
-	}
-	.mob-show.form__content {
-		max-width: 100%;
+	.start-wrapper {
+		width: 100%;
 		height: 100%;
-		overflow: scroll;
-
-		border-radius: 0px;
 	}
-}
+	/* CONTENT { ... */
+	.start__content {
+		width: 100%;
+		height: 100%;
+
+		display: grid;
+		grid-auto-flow: row;
+		grid-auto-columns: 100%;
+		grid-gap: 32px;
+
+		align-content: space-between;
+	}
+		/* HEADER { ... */
+		.start__header {
+			display: grid;
+
+			grid-auto-flow: row;
+			grid-gap: 16px;
+			grid-auto-columns: 100%;
+		}
+		.start__title {
+			width: 100%;
+			max-width: var(--start__title-max-width);
+		}
+		.start__subtitle {
+			width: 100%;
+			max-width: var(--start__subtitle-max-width);
+		}
+		/* ... } HEADER */
+		/* FOOTER { ... */
+			.start__footer {
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: flex-end;
+			}
+			.translations {
+				min-width: 127px;
+				display: flex;
+				flex-direction: column;
+			}
+			.translations button {
+				width: 100%;
+
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: space-between;
+				align-items: center;
+
+				font-size: 40px;
+				line-height: 40px;
+				font-weight: 400;
+				text-transform: uppercase;
+				
+				padding: 4px 0;
+
+				color: var(--c-three);
+			}
+			.translations button::after {
+				content: "";
+				width: 32px;
+				height: 32px;
+				display: inline-block;
+				background: url("./img/translationVector.svg");
+				background-size: 100% 100%;
+			}
+			.start__notice {
+				max-width: var(--start__notice-max-width);
+				position: relative;
+			}
+			.start__notice::before {
+				content: "";
+				width: var(--start__notice-icon-size);
+				height: var(--start__notice-icon-size);
+				display: inline-block;
+				background: url("./img/noticeVector.svg");
+				background-size: 100% 100%;
+
+				position: absolute;
+				top: calc(-1 * calc(var(--start__notice-icon-size) * .8));
+				left: calc(-1 * var(--start__notice-icon-size));
+			}
+		/* ... } FOOTER */
+	/* ... } CONTENT */
+	/* @media { ... */
+	@media screen and (max-width: 768px) { /* mobile */
+		.start {
+			--start__notice-max-width: 40%;
+			--start__notice-icon-size: 2.5em; /* 48px */
+		}
+	}
+	/* ... } @media */
+/* ... } SLIDE01.COMPONENT */

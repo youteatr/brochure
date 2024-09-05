@@ -1,0 +1,26 @@
+/* LOGO { ... */
+/* type "t" (text) { ... */
+.logo_type_t {
+	width: auto;
+	height: 20px;
+	
+	fill: var(--s-two);
+}
+@media screen and (min-width: 768px) { /* desktop */
+	.logo__image {
+		transition: .25s ease;
+	}
+	.logo__firuge:hover .logo_type_t {
+		fill: var(--c-two);
+	}
+}
+@media screen and (max-width: 768px) { /* mobile */
+	.logo__image {
+		transition: .1s;
+	}
+	.logo__firuge:active .logo_type_t {
+		fill: var(--c-two);
+	}
+}
+/* ... } type "t" (text) */
+/* ... } LOGO */

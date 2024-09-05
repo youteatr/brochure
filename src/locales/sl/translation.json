@@ -1,28 +1,136 @@
 {
-	"title": "«⅄OU!» | Gledališki in umetniški studio v centru Ljubljane",
-	"description": "Gledališko-umetniški studio «⅄OU!» v centru Ljubljane na Kotnikovi 4. Igralska igra za otroke 7-12 let. Usposabljanje v ruskem, slovenskem in angleškem jeziku. Začnemo 1. septembra. Vpisi v skupine do 20.08.",
-	"discount" : 10,
-	"temp": "/img/sl/mob-temp.jpg",
-	"form": {
-		"form_1": "Prijavite se na tečaj",
-		"form_2": "Tvoje ime",
-		"form_3": "E-Mail",
-		"form_4": "Telefon",
-		"form_5": "Ime otroka",
-		"form_6": "Otrokova starost",
-		"form_7": "Pridruži se brezplačno",
-		"form_8": "Z oddajo prijave s klikom na gumb soglašate z obdelavo osebnih podatkov s strani Studia «⅄OU!»",
-		"form_9": "Prosim vnesite svoje ime.",
-		"form_10": "Preverite, ali je e-poštni naslov, ki ste ga vnesli, pravilen.",
-		"form_11": "Preverite, ali je telefonska številka, ki ste jo vnesli, pravilna.",
-		"form_12": "Vnesite ime svojega otroka.",
-		"form_13": "Vnesite starost vašega otroka.",
-		"form_14": "Opravičujemo se, vendar v skupine zbiramo otroke od 7 do 15 let.",
-		"form_15": "Vloga je poslana. Kmalu vas bomo kontaktirali!"
+	"meta": {
+		"titles": {
+			"/": "«⅄OU!» | Gledališko-likovni atelje v središču Ljubljane",
+			"/enroll": "Prijavite se na igralski tečaj pri «⅄OU!»"
+		},
+		"descriptions": {
+			"/": "Theater and art studio «⅄OU!» in the center of Ljubljana on Kotnikova 4. Acting for children from {{childAgeMin}} to {{childAgeMax}} years. Training in Russian, Slovenian and English. We start on September 2. Leave a request for a free lesson.",
+			"/enroll": "{{componentsFormHeadlineDescription}}"
+		}
 	},
-    "slide_1": {
-        "text_1_1" : "Gledališki in umetniški studio v centru Ljubljane",
-		"text_1_2": "Tečaj igralstva za otroke od 5 do 15 let",
-		"text_1_3": "Pustite zahtevo za brezplačno poskusno lekcijo v telegramu @youteatrbot"
-    }
+	"properties": {
+		"titles": {
+			"shift-to-scroll": "Shift + kolesce miške za pomikanje"
+		}
+	},
+	"global": {
+		"child-age-min": 5,
+		"child-age-max": 15,
+		"discount-amount": 10,
+		"choose-language": "Izberite drug jezik",
+		"cost-per-month": "eur/mes.",
+		"logo": "Logotip",
+		"temp": "/img/sl/mob-temp.jpg"
+	},
+	"components": {
+		"header": {
+			"menu": {
+				"about": "O gledališču",
+				"our-courses": "Naši tečaji",
+				"tutors": "Naša ekipa",
+				"gallery": "Galerija",
+				"contact": "Kontakti"
+			}
+		},
+		"footer": {
+			"copyright": "Copyright © 2024 Theatre studio «⅄OU!»",
+			"location": "Slovenia"
+		},
+		"form": {
+			"headline": {
+				"title": "Prijavite se na tečaj",
+				"description": "Prijavite svojega otroka na prvo brezplačno uro tako, da izpolnite preprost obrazec."
+			},
+			"labels": {
+				"group-titles": {
+					"questionnaire": "Navedite podatke o sebi in svojem otroku",
+					"directions": "Izberite področja tečaja"
+				},
+				"inputs": {
+					"parent-name": {
+						"placeholder": "Tvoje ime",
+						"tips": {
+							"empty": {
+								"value": "Prosim vnesite svoje ime. Kako naj vas kontaktiramo, ko se srečamo?"
+							}
+						}
+					},
+					"email": {
+						"placeholder": "E-Mail",
+						"tips": {
+							"empty": {
+								"value": "Korespondenco in dokumente bomo pošiljali po pošti. Prosimo, vnesite svoj e-poštni naslov."
+							},
+							"wrong": {
+								"value": "Videti je, da ste se zmotili pri vnosu. Preverite, ali je vaš e-poštni naslov pravilno črkovan."
+							}
+						}
+					},
+					"phone": {
+						"placeholder": "Telefon",
+						"tips": {
+							"empty": {
+								"value": "Kontaktirali vas bomo na WhatsApp na to številko, poklicali pa vas bomo tudi v nujnih primerih. Vnesite svojo telefonsko številko."
+							},
+							"wrong": {
+								"value": "Videti je, da ste se zmotili pri vnosu. Preverite, ali je telefonska številka pravilno črkovana."
+							}
+						}
+					},
+					"child-name": {
+						"placeholder": "Ime otroka",
+						"tips": {
+							"empty": {
+								"value": "Navedite ime vašega otroka. Za nas je pomembno, da razumemo, kako nagovarjati bodočega igralca."
+							}
+						}
+					},
+					"child-age": {
+						"placeholder": "Otrokova starost",
+						"tips": {
+							"empty": {
+								"value": "koliko je star vaš otrok? Poučujemo otroke od {{childAgeMin}} do {{childAgeMax}} let."
+							},
+							"too-little": {
+								"value": "Videti je, da je vaš otrok še premlad. Poučujemo otroke od {{childAgeMin}} let."
+							},
+							"too-much": {
+								"value": "Videti je, da je vaš otrok prestar. Izobražujemo otroke stare do {{childAgeMax}} let."
+							}
+						}
+					}
+				},
+				"checkboxes": {
+					"head": {
+						"title": "Smer"
+					},
+					"descriptions": {
+						"direction-1": "Gledališki tečaj / Odrsko gibanje / Scenski govor",
+						"direction-2": "Gledališko petje / Glasbeni / Vokal",
+						"direction-3": "Lutkovna predstava / Lutkovna animacija glasu in telesa"
+					}
+				}
+			},
+			"submit": {
+				"button": "Pridruži se brezplačno",
+				"notice": "Z vnosom, oddajo prijave ali klikom na zgornji gumb soglašate z obdelavo osebnih podatkov s strani osebe «Studio ⅄OU!»."
+			},
+			"responses": {
+				"success": {
+					"line-1": "Prijava je bila uspešno poslana.",
+					"line-2": "Kmalu vas bomo kontaktirali, počakajte!"
+				}
+			}
+		},
+		"slide-1": {
+			"header": {
+				"title": "Gledališki in umetniški studio v centru Ljubljane",
+				"subtitle": "Tečaj igralstva za otroke od {{childAgeMin}} do {{childAgeMax}} let"
+			},
+			"footer": {
+				"notice": "Pustite zahtevo za brezplačno poskusno lekcijo"
+			}
+		}
+	}
 }

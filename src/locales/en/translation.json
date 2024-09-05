@@ -1,28 +1,136 @@
 {
-	"title": "«⅄OU!» | Art and theatre studio in the centre of Ljubljana",
-	"description": "Studio of theatre and art «⅄OU!» in the center of Ljubljana on Kotnikova, 4. Acting skills for children 7-12 years. Lessons in Russian, Slovenian and English. Start on 1 September. Enrollment in groups until 20.08.",
-	"discount" : 10,
-	"temp": "/img/en/mob-temp.jpg",
-	"form": {
-		"form_1": "Enroll in a course",
-		"form_2": "Your name",
-		"form_3": "E-Mail",
-		"form_4": "Phone",
-		"form_5": "Child name",
-		"form_6": "Child age",
-		"form_7": "Enroll for free",
-		"form_8": "By submitting a request, you give consent to the processing of personal data of «⅄OU!» studio",
-		"form_9": "Please enter your name.",
-		"form_10": "Please check the e-mail address you entered.",
-		"form_11": "Please check the telephone number you entered.",
-		"form_12": "Please enter your child’s name.",
-		"form_13": "Please enter the age of your child.",
-		"form_14": "Sorry, but we’re recruiting groups of seven to 15.",
-		"form_15": "The application has been sent. We will contact you soon!"
+	"meta": {
+		"titles": {
+			"/": "«⅄OU!» | Art and theatre studio in the centre of Ljubljana",
+			"/enroll": "Enroll for an acting course at «⅄OU!»"
+		},
+		"descriptions": {
+			"/": "Theater and art studio «⅄OU!» in the center of Ljubljana on Kotnikova 4. Acting for children from {{childAgeMin}} to {{childAgeMax}} years. Training in Russian, Slovenian and English. We start on September 2. Leave a request for a free lesson.",
+			"/enroll": "{{componentsFormHeadlineDescription}}"
+		}
 	},
-    "slide_1": {
-        "text_1_1" : "Art and theatre studio in the centre of Ljubljana",
-		"text_1_2": "Acting for children from 5 to 15 years",
-		"text_1_3": "Leave an application for a free lesson in Telegram @youteatrbot"
-    }
+	"properties": {
+		"titles": {
+			"shift-to-scroll": "Shift + mouse wheel to scroll"
+		}
+	},
+	"global": {
+		"child-age-min": 5,
+		"child-age-max": 15,
+		"discount-amount": 10,
+		"choose-language": "Choose different language",
+		"cost-per-month": "euro/month",
+		"logo": "Logotype",
+		"temp": "/img/en/mob-temp.jpg"
+	},
+	"components": {
+		"header": {
+			"menu": {
+				"about": "About theatre",
+				"our-courses": "Our courses",
+				"tutors": "Our tutors",
+				"gallery": "Gallery",
+				"contact": "Contact"
+			}
+		},
+		"footer": {
+			"copyright": "Copyright © 2024 Theatre studio «⅄OU!»",
+			"location": "Slovenia"
+		},
+		"form": {
+			"headline": {
+				"title": "Enroll in a course",
+				"description": "Enroll your child for the first free lesson by filling out a simple form."
+			},
+			"labels": {
+				"group-titles": {
+					"questionnaire": "Provide information about yourself and your child",
+					"directions": "Select course direction"
+				},
+				"inputs": {
+					"parent-name": {
+						"placeholder": "Your name",
+						"tips": {
+							"empty": {
+								"value": "Please enter your name. How do we contact you?"
+							}
+						}
+					},
+					"email": {
+						"placeholder": "E-Mail",
+						"tips": {
+							"empty": {
+								"value": "We will send correspondence and documents by mail. Please enter your email."
+							},
+							"wrong": {
+								"value": "It looks like you made a mistake when entering. Please check that your email address is spelled correctly."
+							}
+						}
+					},
+					"phone": {
+						"placeholder": "Phone",
+						"tips": {
+							"empty": {
+								"value": "We will contact you on WhatsApp and also call you in case of emergency. Please enter your phone number."
+							},
+							"wrong": {
+								"value": "It looks like you made a mistake when entering. Check that the phone number is spelled correctly."
+							}
+						}
+					},
+					"child-name": {
+						"placeholder": "Child name",
+						"tips": {
+							"empty": {
+								"value": "Please enter your child’s name. It is important for us to understand how to address the future actor."
+							}
+						}
+					},
+					"child-age": {
+						"placeholder": "Child age",
+						"tips": {
+							"empty": {
+								"value": "How old is your child? We teach children from {{childAgeMin}} to {{childAgeMax}}."
+							},
+							"too-little": {
+								"value": "Your child seems to be a little young. We are teaching children from {{childAgeMin}} years old."
+							},
+							"too-much": {
+								"value": "Your child seems to be too old. We are teaching children up to {{childAgeMax}} years."
+							}
+						}
+					}
+				},
+				"checkboxes": {
+					"head": {
+						"title": "Direction"
+					},
+					"descriptions": {
+						"direction-1": "Acting / Stage movement / Stage speech",
+						"direction-2": "Stage singing / Musical / Vocals",
+						"direction-3": "Puppet theater / Puppet animation of voice and body"
+					}
+				}
+			},
+			"submit": {
+				"button": "Enroll for free",
+				"notice": "By submitting your request, clicking the button above, you consent to the processing of personal data to the «Studio ⅄OU!»."
+			},
+			"responses": {
+				"success": {
+					"line-1": "Enroll successfully submitted.",
+					"line-2": "We will contact you soon, please wait!"
+				}
+			}
+		},
+		"slide-1": {
+			"header": {
+				"title": "Art and theatre studio in the centre of Ljubljana",
+				"subtitle": "Acting for children from {{childAgeMin}} to {{childAgeMax}} years"
+			},
+			"footer": {
+				"notice": "Leave an application for a free lesson"
+			}
+		}
+	}
 }

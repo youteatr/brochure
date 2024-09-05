@@ -1,0 +1,27 @@
+/* FOOTER.COMPONENT { ... */
+.footer {
+	padding-top: 16px;
+	padding-bottom: 32px;
+
+	margin-top: 32px;
+	
+	border-top: 1px solid #D6D6D6;
+}
+.footer__content {
+	display: flex;
+	flex-direction: row;
+	
+	justify-content: space-between;
+}
+/* @media { ... */
+	@media screen and (max-width: 768px) {
+		.footer__content {
+			display: grid;
+
+			grid-auto-flow: row;
+			grid-gap: 16px;
+			grid-auto-columns: 100%;
+		}
+	}
+/* ... } @media */
+/* ... } FOOTER.COMPONENT */

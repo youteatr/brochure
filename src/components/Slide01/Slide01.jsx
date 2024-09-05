@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import i18n from '../../i18n';
 import Fresco from './Fresco/Fresco';
@@ -39,43 +39,29 @@ function Slide_01() {
 		}
 	}
 
-	const SlideOne = () => {
-		const [height, setHeight] = useState(window.innerHeight)
-	  
-		useEffect(() => {
-		  const handleResize = () => {
-			setHeight(window.innerHeight)
-		  };
-	  
-		  window.addEventListener('resize', handleResize)
-	  
-		  return () => {
-			window.removeEventListener('resize', handleResize)
-		  };
-		}, [])
-
-		return height
-	}
-
 	return (
-		<section className="slide_one" style={{height: (SlideOne() - 80*2)}}>
-			<div className="container" style={{height: (SlideOne() - 80*2)}}>
-				<div className="inner flex-column">
-					<div className="up">
-						<h1>{t("slide_1.text_1_1")}</h1>
-						<h2>{t("slide_1.text_1_2")}</h2>
+		<section className="start selection_inverse">
+			<div className="start-wrapper container container_long">
+				<div className="start__content">
+					<div className="start__header">
+						<div className="start__title">
+							<h1 className='text text_color_m-one heading_one'>{t("components.slide-1.header.title")}</h1>
+						</div>
+						<div className="start__subtitle">
+							<span className='text text_color_m-one text_size_huge'>{t("components.slide-1.header.subtitle", { childAgeMin: t('global.child-age-min'), childAgeMax: t('global.child-age-max') })}</span>
+						</div>
 					</div>
-					<div className="down">
+					<div className="start__footer">
 						<div className="translations">
 							{translations(selectedLanguage)}
 						</div>
-						<div className="notice">
-							<span>{t("slide_1.text_1_3")}</span>
+						<div className="start__notice">
+							<span className='text text_size_xxxlarge text_color_m-one'>{t("components.slide-1.footer.notice")}</span>
 						</div>
 					</div>
 				</div>
 			</div>
-			<Fresco height={SlideOne()} />
+			<Fresco/>
 		</section>
 	)
 }
