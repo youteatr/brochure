@@ -24,7 +24,7 @@ function Enroll() {
 	<>
 		<Helmet>
 			<title>{t('meta.titles./enroll')}</title>
-			<meta name="description" content={t('meta.descriptions./enroll')} />
+			<meta name="description" content={t('meta.descriptions./enroll', { componentsFormHeadlineDescription: t('components.form.headline.description') })} />
 		</Helmet>
 		<div className='wrapper'>
 			<Header />

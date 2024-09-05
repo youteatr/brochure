@@ -224,7 +224,7 @@
 				display: none;
 			}
 			.form-preliminary_popup {
-				display: block;
+				display: grid;
 			}
 		}
 		@media (max-width: 1200px) {
