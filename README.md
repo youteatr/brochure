@@ -1,2 +1,3 @@
-# brochure
-Studio “⅄OU!” webbrochure
+# «⅄OU!»
+
+Art and theatre studio
