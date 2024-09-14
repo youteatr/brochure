@@ -44,9 +44,9 @@ function Form(props) {
 	}, [i18n]);
 	
 	const chooseLanguage = (e) => {
-		e.preventDefault();
-		i18n.changeLanguage(e.target.value); // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
-		setSelectedLanguage(e.target.value);
+		e.preventDefault()
+		i18n.changeLanguage(e.target.value) // i18n.changeLanguage() is used to change the language assigned to lng in i18n.js file.
+		setSelectedLanguage(e.target.value)
 	}
 	const translations = (lng) => {
 		if (lng === "en") {
@@ -87,9 +87,9 @@ function Form(props) {
 		[phone, setPhone] = useState(''),
 		[childAge, setChildAge] = useState(''),
 
-		[directionOne, setDirectionOne] = useState(true), // TRUE by default for at least one selected
-		[directionTwo, setDirectionTwo] = useState(true),
-		[directionThree, setDirectionThree] = useState(true)
+		[directionOne, setDirectionOne] = useState(false), // TRUE by default for at least one selected
+		[directionTwo, setDirectionTwo] = useState(false),
+		[directionThree, setDirectionThree] = useState(false)
 
 	useEffect(() => {
 		if (location.state) {
@@ -110,14 +110,20 @@ function Form(props) {
 			if (directionOne && directionTwo && directionThree) {
 				directions.push("Полный курс")
 			} else {
-				if (directionOne) {
-					directions.push(`\n - Уршулу \`(Актерское мастерство, Сценическое движение, Сценическая речь)\``)
-				}
-				if (directionTwo) {
-					directions.push(`\n - Давида \`(Театральное пение, Мюзикл, Вокал)\``)
-				}
-				if (directionThree) {
-					directions.push(`\n - Марию \`(Кукольный театр, Кукольная анимация голоса и тела)\``)
+				if(childAge > 9) {
+					if (directionTwo) {
+						directions.push(`\n - Давида \`(Театральное пение, Мюзикл, Вокал)\``)
+					}
+				} else {
+					if (directionOne) {
+						directions.push(`\n - Уршулу \`(Актерское мастерство, Сценическое движение, Сценическая речь)\``)
+					}
+					if (directionTwo) {
+						directions.push(`\n - Давида \`(Театральное пение, Мюзикл, Вокал)\``)
+					}
+					if (directionThree) {
+						directions.push(`\n - Марию \`(Кукольный театр, Кукольная анимация голоса и тела)\``)
+					}
 				}
 			}
 
@@ -266,6 +272,178 @@ ID этой записи: \`${id}\`
 		return `${day}.${month}.${year}, ${hour}:${minute}:${second}`;
 	}
 
+	const mode = (props) => {
+		if(props.mode === '23aa4b8e-9092-4015-a322-7c5560dbd3bf') {
+			if(childAge > 9) {
+				return (
+					<div className="form__section">
+					<div className="form__labels-group-title">
+						<span className='text'>{t('components.form.labels.group-titles.directions')}</span>
+					</div>
+					
+					<input
+						checked={directionTwo}
+						// onChange={(e) => setDirectionTwo(e.target.checked)}
+						type="checkbox"
+
+						id="direction-two"
+						className="form__checkbox"
+
+						name="direction-two"
+					/>
+					<label className={`form__label form__label-checkbox`} id="for-direction-two" for="direction-two">
+						<div className="form__label-content">
+							<div className="direction__info">
+								<div className="direction__head">
+									<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 2</span>
+									<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>60 {t('global.cost-per-month')}</span>
+								</div>
+								<div className="direction__description">
+									<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-2')}</p>
+								</div>
+							</div>
+						</div>
+					</label>
+				</div>
+				)
+			} else {
+				return (
+					<div className="form__section">
+					<div className="form__labels-group-title">
+						<span className='text'>{t('components.form.labels.group-titles.directions')}</span>
+					</div>
+					<input
+						checked={directionOne}
+						onChange={(e) => setDirectionOne(e.target.checked)}
+						type="checkbox"
+
+						id="direction-one"
+						className="form__checkbox"
+
+						name="direction-one"
+					/>
+					<label className={`form__label form__label-checkbox`} id="for-direction-one" for="direction-one">
+						<div className="form__label-content">
+							<div className="direction__info">
+								<div className="direction__head">
+									<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 1</span>
+									<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>80 {t('global.cost-per-month')}</span>
+								</div>
+								<div className="direction__description">
+									<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-1')}</p>
+								</div>
+							</div>
+						</div>
+					</label>
+
+					<input
+						checked={directionTwo}
+						onChange={(e) => setDirectionTwo(e.target.checked)}
+						type="checkbox"
+
+						id="direction-two"
+						className="form__checkbox"
+
+						name="direction-two"
+					/>
+					<label className={`form__label form__label-checkbox`} id="for-direction-two" for="direction-two">
+						<div className="form__label-content">
+							<div className="direction__info">
+								<div className="direction__head">
+									<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 2</span>
+									<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>60 {t('global.cost-per-month')}</span>
+								</div>
+								<div className="direction__description">
+									<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-2')}</p>
+								</div>
+							</div>
+						</div>
+					</label>
+				</div>
+				)
+			}
+		} else {
+			return (
+				<div className="form__section">
+				<div className="form__labels-group-title">
+					<span className='text'>{t('components.form.labels.group-titles.directions')}</span>
+				</div>
+				<input
+					checked={directionOne}
+					onChange={(e) => setDirectionOne(e.target.checked)}
+					type="checkbox"
+
+					id="direction-one"
+					className="form__checkbox"
+
+					name="direction-one"
+				/>
+				<label className={`form__label form__label-checkbox`} id="for-direction-one" for="direction-one">
+					<div className="form__label-content">
+						<div className="direction__info">
+							<div className="direction__head">
+								<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 1</span>
+								<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>80 {t('global.cost-per-month')}</span>
+							</div>
+							<div className="direction__description">
+								<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-1')}</p>
+							</div>
+						</div>
+					</div>
+				</label>
+
+				<input
+					checked={directionTwo}
+					onChange={(e) => setDirectionTwo(e.target.checked)}
+					type="checkbox"
+
+					id="direction-two"
+					className="form__checkbox"
+
+					name="direction-two"
+				/>
+				<label className={`form__label form__label-checkbox`} id="for-direction-two" for="direction-two">
+					<div className="form__label-content">
+						<div className="direction__info">
+							<div className="direction__head">
+								<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 2</span>
+								<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>60 {t('global.cost-per-month')}</span>
+							</div>
+							<div className="direction__description">
+								<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-2')}</p>
+							</div>
+						</div>
+					</div>
+				</label>
+
+				<input
+					checked={directionThree}
+					onChange={(e) => setDirectionThree(e.target.checked)}
+					type="checkbox"
+
+					id="direction-three"
+					className="form__checkbox"
+
+					name="direction-three"
+				/>
+				<label className={`form__label form__label-checkbox`} id="for-direction-three" for="direction-three">
+					<div className="form__label-content">
+						<div className="direction__info">
+							<div className="direction__head">
+								<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 3</span>
+								<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>60 {t('global.cost-per-month')}</span>
+							</div>
+							<div className="direction__description">
+								<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-3')}</p>
+							</div>
+						</div>
+					</div>
+				</label>
+			</div>
+			)
+		}
+	}
+
 	return (
 		<section className="form">
 			<div className="container">
@@ -370,82 +548,7 @@ ID этой записи: \`${id}\`
 						</label>
 					</div>
 					<hr className='devider' />
-					<div className="form__section">
-						<div className="form__labels-group-title">
-							<span className='text'>{t('components.form.labels.group-titles.directions')}</span>
-						</div>
-						<input
-							checked={directionOne}
-							onChange={(e) => setDirectionOne(e.target.checked)}
-							type="checkbox"
-
-							id="direction-one"
-							className="form__checkbox"
-
-							name="direction-one"
-						/>
-						<label className={`form__label form__label-checkbox`} id="for-direction-one" for="direction-one">
-							<div className="form__label-content">
-								<div className="direction__info">
-									<div className="direction__head">
-										<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 1</span>
-										<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>80 {t('global.cost-per-month')}</span>
-									</div>
-									<div className="direction__description">
-										<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-1')}</p>
-									</div>
-								</div>
-							</div>
-						</label>
-
-						<input
-							checked={directionTwo}
-							onChange={(e) => setDirectionTwo(e.target.checked)}
-							type="checkbox"
-
-							id="direction-two"
-							className="form__checkbox"
-
-							name="direction-two"
-						/>
-						<label className={`form__label form__label-checkbox`} id="for-direction-two" for="direction-two">
-							<div className="form__label-content">
-								<div className="direction__info">
-									<div className="direction__head">
-										<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 2</span>
-										<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>60 {t('global.cost-per-month')}</span>
-									</div>
-									<div className="direction__description">
-										<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-2')}</p>
-									</div>
-								</div>
-							</div>
-						</label>
-
-						<input
-							checked={directionThree}
-							onChange={(e) => setDirectionThree(e.target.checked)}
-							type="checkbox"
-
-							id="direction-three"
-							className="form__checkbox"
-
-							name="direction-three"
-						/>
-						<label className={`form__label form__label-checkbox`} id="for-direction-three" for="direction-three">
-							<div className="form__label-content">
-								<div className="direction__info">
-									<div className="direction__head">
-										<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 3</span>
-										<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>60 {t('global.cost-per-month')}</span>
-									</div>
-									<div className="direction__description">
-										<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-3')}</p>
-									</div>
-								</div>
-							</div>
-						</label>
-					</div>
+					{mode(props)}
 					<hr className='devider' />
 					<div className="form__section form__submit">
 						<button className="text text_size_xxlarge text_weight_medium form__button no-select" type="submit">{t("components.form.submit.button")}</button>
@@ -473,7 +576,6 @@ ID этой записи: \`${id}\`
 				</div>
 			</div>
 		</section>
-		
 	)
 }
 

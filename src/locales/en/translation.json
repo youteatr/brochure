@@ -5,7 +5,7 @@
 			"/enroll": "Enroll for an acting course at «⅄OU!»"
 		},
 		"descriptions": {
-			"/": "Theater and art studio «⅄OU!» in the center of Ljubljana on Kotnikova 4. Acting for children from {{childAgeMin}} to {{childAgeMax}} years. Training in Russian, Slovenian and English. We start on September 2. Leave a request for a free lesson.",
+			"/": "Theater and art studio «⅄OU!» in the center of Ljubljana on Kotnikova 4. Acting for children from {{childAgeMin}} to {{childAgeMax}} years. Training in Russian, Slovenian and English.",
 			"/enroll": "{{componentsFormHeadlineDescription}}"
 		}
 	},
@@ -40,7 +40,7 @@
 		"form": {
 			"headline": {
 				"title": "Enroll in a course",
-				"description": "Enroll your child for the first free lesson by filling out a simple form."
+				"description": "Enroll your child in an acting course by filling out a simple form."
 			},
 			"labels": {
 				"group-titles": {
@@ -113,7 +113,7 @@
 				}
 			},
 			"submit": {
-				"button": "Enroll for free",
+				"button": "Enroll in the course",
 				"notice": "By submitting your request, clicking the button above, you consent to the processing of personal data to the «Studio ⅄OU!»."
 			},
 			"responses": {
@@ -129,7 +129,7 @@
 				"subtitle": "Acting for children from {{childAgeMin}} to {{childAgeMax}} years"
 			},
 			"footer": {
-				"notice": "Leave an application for a free lesson"
+				"notice": ""
 			}
 		}
 	}

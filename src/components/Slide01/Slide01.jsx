@@ -55,9 +55,9 @@ function Slide_01() {
 						<div className="translations">
 							{translations(selectedLanguage)}
 						</div>
-						<div className="start__notice">
+						{/* <div className="start__notice">
 							<span className='text text_size_xxxlarge text_color_m-one'>{t("components.slide-1.footer.notice")}</span>
-						</div>
+						</div> */}
 					</div>
 				</div>
 			</div>

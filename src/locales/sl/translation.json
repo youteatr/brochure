@@ -5,7 +5,7 @@
 			"/enroll": "Prijavite se na igralski tečaj pri «⅄OU!»"
 		},
 		"descriptions": {
-			"/": "Theater and art studio «⅄OU!» in the center of Ljubljana on Kotnikova 4. Acting for children from {{childAgeMin}} to {{childAgeMax}} years. Training in Russian, Slovenian and English. We start on September 2. Leave a request for a free lesson.",
+			"/": "Gledališko-umetniški studio “⅄OU!” v centru Ljubljane na Kotnikovi 4. Igra za otroke od {{childAgeMin}} do {{childAgeMax}} let. Usposabljanje v ruskem, slovenskem in angleškem jeziku.",
 			"/enroll": "{{componentsFormHeadlineDescription}}"
 		}
 	},
@@ -40,7 +40,7 @@
 		"form": {
 			"headline": {
 				"title": "Prijavite se na tečaj",
-				"description": "Prijavite svojega otroka na prvo brezplačno uro tako, da izpolnite preprost obrazec."
+				"description": "Vpišite svojega otroka na igralski tečaj tako, da izpolnite preprost obrazec."
 			},
 			"labels": {
 				"group-titles": {
@@ -129,7 +129,7 @@
 				"subtitle": "Tečaj igralstva za otroke od {{childAgeMin}} do {{childAgeMax}} let"
 			},
 			"footer": {
-				"notice": "Pustite zahtevo za brezplačno poskusno lekcijo"
+				"notice": ""
 			}
 		}
 	}
