@@ -283,7 +283,7 @@ ID этой записи: \`${id}\`
 					
 					<input
 						checked={directionTwo}
-						// onChange={(e) => setDirectionTwo(e.target.checked)}
+						onChange={(e) => setDirectionTwo(e.target.checked)}
 						type="checkbox"
 
 						id="direction-two"
