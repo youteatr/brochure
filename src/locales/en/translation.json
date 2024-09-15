@@ -18,6 +18,17 @@
 		"child-age-min": 5,
 		"child-age-max": 15,
 		"discount-amount": 10,
+		"prices": {
+			"default": {
+				"ursula": 80,
+				"david": 60,
+				"maria": 60
+			},
+			"enroll-23aa4b8e-9092-4015-a322-7c5560dbd3bf": {
+				"ursula": 60,
+				"david": 40
+			}
+		},
 		"choose-language": "Choose different language",
 		"cost-per-month": "euro/month",
 		"logo": "Logotype",
