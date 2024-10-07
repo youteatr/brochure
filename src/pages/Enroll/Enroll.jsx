@@ -7,9 +7,15 @@ import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
 import Form from '../../components/Form/Form'
 
-function Enroll() {
-	const { t } = useTranslation()
+function Enroll(props) {
+	const { t, i18n } = useTranslation();
   const location = useLocation();
+
+	useEffect(() => {
+		if (props.lang) {
+		  i18n.changeLanguage(props.lang);
+		}
+	}, [props.lang, i18n]);
 
   useEffect(() => {
     if (location.hash) {

@@ -16,6 +16,9 @@ function App() {
 					<Routes>
 						<Route path="/" element={ <Main /> } />
 						<Route path="/enroll" element={ <Enroll /> } />
+						<Route path="/en/enroll" element={ <Enroll lang='en' /> } />
+						<Route path="/ru/enroll" element={ <Enroll lang='ru' /> } />
+						<Route path="/sl/enroll" element={ <Enroll lang='sl' /> } />
 						<Route path="/enroll/23aa4b8e-9092-4015-a322-7c5560dbd3bf" element={ <Enroll_23aa4b8e_092_4015_a322_7c5560dbd3bf lang='en' /> } /> {/* Special enroll from 2024.09.14 */}
 
 						<Route path="/downloads/rus.pdf" element={"../downloads/rus.pdf"} />
