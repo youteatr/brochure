@@ -5,7 +5,7 @@
 			"/enroll": "Enroll for an acting course at «⅄OU!»"
 		},
 		"descriptions": {
-			"/": "Theater and art studio «⅄OU!» in the center of Ljubljana on Kotnikova 4. Acting for children from {{childAgeMin}} to {{childAgeMax}} years. Training in Russian, Slovenian and English.",
+			"/": "Theater and art studio «⅄OU!» in the center of Ljubljana on Kotnikova 4. Acting for children from {{childAgeMin}} y.o. and adults. Training in Russian, Slovenian and English.",
 			"/enroll": "{{componentsFormHeadlineDescription}}"
 		}
 	},
@@ -137,7 +137,7 @@
 		"slide-1": {
 			"header": {
 				"title": "Art and theatre studio in the centre of Ljubljana",
-				"subtitle": "Acting for children from {{childAgeMin}} to {{childAgeMax}} years"
+				"subtitle": "Acting for children from {{childAgeMin}} y.o. and adults"
 			},
 			"footer": {
 				"notice": ""

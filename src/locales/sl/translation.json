@@ -5,7 +5,7 @@
 			"/enroll": "Prijavite se na igralski tečaj pri «⅄OU!»"
 		},
 		"descriptions": {
-			"/": "Gledališko-umetniški studio “⅄OU!” v centru Ljubljane na Kotnikovi 4. Igra za otroke od {{childAgeMin}} do {{childAgeMax}} let. Usposabljanje v ruskem, slovenskem in angleškem jeziku.",
+			"/": "Gledališko-umetniški studio «⅄OU!» v centru Ljubljane na Kotnikovi 4. Igralstvo za otroke od {{childAgeMin}} let in odrasle. Usposabljanje v ruskem, slovenskem in angleškem jeziku.",
 			"/enroll": "{{componentsFormHeadlineDescription}}"
 		}
 	},
@@ -137,7 +137,7 @@
 		"slide-1": {
 			"header": {
 				"title": "Gledališki in umetniški studio v centru Ljubljane",
-				"subtitle": "Tečaj igralstva za otroke od {{childAgeMin}} do {{childAgeMax}} let"
+				"subtitle": "Tečaj igralstva za otroke od {{childAgeMin}} let in odrasle"
 			},
 			"footer": {
 				"notice": ""
