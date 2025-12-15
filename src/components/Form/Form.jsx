@@ -383,7 +383,7 @@ ID этой записи: \`${id}\`
 						<div className="direction__info">
 							<div className="direction__head">
 								<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 1</span>
-								<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>{t('global.prices.default.ursula')} {t('global.cost-per-month')}</span>
+								{/* <span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>{t('global.prices.default.ursula')} {t('global.cost-per-month')}</span> */}
 							</div>
 							<div className="direction__description">
 								<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-1')}</p>
@@ -407,7 +407,7 @@ ID этой записи: \`${id}\`
 						<div className="direction__info">
 							<div className="direction__head">
 								<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 2</span>
-								<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>{t('global.prices.default.david')} {t('global.cost-per-month')}</span>
+								{/* <span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>{t('global.prices.default.david')} {t('global.cost-per-month')}</span> */}
 							</div>
 							<div className="direction__description">
 								<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-2')}</p>
@@ -431,7 +431,7 @@ ID этой записи: \`${id}\`
 						<div className="direction__info">
 							<div className="direction__head">
 								<span className='text text_size_large text_transform_uppercase text_weight_medium text_color_c-two no-select'>{t('components.form.labels.checkboxes.head.title')} 3</span>
-								<span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>{t('global.prices.default.maria')} {t('global.cost-per-month')}</span>
+								{/* <span className='text text_size_large text_transform_uppercase text_weight_medium no-select'>{t('global.prices.default.maria')} {t('global.cost-per-month')}</span> */}
 							</div>
 							<div className="direction__description">
 								<p className="text text_size_small no-select">{t('components.form.labels.checkboxes.descriptions.direction-3')}</p>
