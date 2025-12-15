@@ -8,6 +8,13 @@ import Footer from '../../../components/Footer/Footer'
 import Form from '../../../components/Form/Form'
 
 function Enroll(props) {
+
+  useEffect(() => {
+    window.location.replace('/enroll');
+  }, []);
+
+  return null;
+
 	const { t, i18n } = useTranslation();
   const location = useLocation();
 
